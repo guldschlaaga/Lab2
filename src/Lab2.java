@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Lab2 {
 	public static void main(String[] args){
 		Scanner scanner = new Scanner(System.in);
 		    String[] arrA  = scanner.nextLine().split("\\s"); //input integers with white spaces between them (e.g. 1 2 3 4)
