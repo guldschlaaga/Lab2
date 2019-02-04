@@ -42,14 +42,28 @@ public class Lab2 {
 		    System.out.println(getMaxGen(strArray));
 		}
 
-	private  static <T> T getMaxGen(T[] a) {
-		// TODO Auto-generated method stub
-		return null;
+	private  static <T extends Comparable<T>> T getMaxGen(T[] a) {
+		T Max = a[0];
+		for(int i = 0; i<a.length-1;i++) {
+			
+			if(Max.compareTo(a[i+1]) < 0) {
+
+				Max = a[i+1];
+			}
+		}
+		return Max;
 	}
 
 	private static Comparable getMax(Comparable[] a) {
-		// TODO Auto-generated method stub
-		return null;
+		Comparable Max = a[0];
+		for(int i = 0; i<a.length-1;i++) {
+			
+			if(Max.compareTo(a[i+1]) < 0) {
+				
+				Max = a[i+1];
+			}
+		}
+		return Max;
 	}
 
 	private static <T> void printArrayGen(T[] a) {
