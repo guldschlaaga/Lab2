@@ -53,28 +53,61 @@ public class Main {
 	}
 
 	private static <T> void printArrayGen(T[] a) {
-		// TODO Auto-generated method stub
+		System.out.print("{");
+		for (int i = 0; i < a.length - 1; i++ ) {
+			System.out.print(a[i]);
+			System.out.print(", ");
+		}
+		System.out.print(a[a.length - 1]);
+		System.out.print("}");
+		System.out.println();
 		
 	}
 
-	private static void printArray(String[] strArray) {
-		// TODO Auto-generated method stub
+	private static void printArray(String[] a) {
+		System.out.print("{");
+		for (int i = 0; i < a.length - 1; i++ ) {
+			System.out.print(a[i]);
+			System.out.print(", ");
+		}
+		System.out.print(a[a.length - 1]);
+		System.out.print("}");
+		System.out.println();
 		
 	}
 
-	private static void printArray(Character[] charArray) {
-		// TODO Auto-generated method stub
+	private static void printArray(Character[] a) {
+		System.out.print("{");
+		for (int i = 0; i < a.length - 1; i++ ) {
+			System.out.print(a[i]);
+			System.out.print(", ");
+		}
+		System.out.print(a[a.length - 1]);
+		System.out.print("}");
+		System.out.println();
 		
 	}
 
-	private static void printArray(Double[] doubArray) {
-		// TODO Auto-generated method stub
-		
+	private static void printArray(Double[] a) {
+		System.out.print("{");
+		for (int i = 0; i < a.length - 1; i++ ) {
+			System.out.print(a[i]);
+			System.out.print(", ");
+		}
+		System.out.print(a[a.length - 1]);
+		System.out.print("}");
+		System.out.println();
 	}
 
-	private static void printArray(Integer[] intArray) {
-		// TODO Auto-generated method stub
-		
+	private static void printArray(Integer[] a) {
+		System.out.print("{");
+		for (int i = 0; i < a.length - 1; i++ ) {
+			System.out.print(a[i]);
+			System.out.print(", ");
+		}
+		System.out.print(a[a.length - 1]);
+		System.out.print("}");
+		System.out.println();
 	}
 
 	private static void printArrayNonGen(Object[] a) {
