@@ -1,4 +1,12 @@
+/* David Lau, Christopher Lee
+ * Lab WF 2-3:15
+ * Homework 2
+ * dlau3
+ * 
+ * 
+ */
 import java.util.Scanner;
+
 
 public class Lab2 {
 	public static void main(String[] args){
@@ -42,9 +50,9 @@ public class Lab2 {
 		    System.out.println(getMaxGen(strArray));
 		}
 
-	private  static <T extends Comparable<T>> T getMaxGen(T[] a) {
+	private  static <T extends Comparable<T>> T getMaxGen(T[] a) { //generic type created
 		T Max = a[0];
-		for(int i = 0; i<a.length-1;i++) {
+		for(int i = 0; i<a.length-1;i++) { //goes through the list, changing the max value if the compared element is larger
 			
 			if(Max.compareTo(a[i+1]) < 0) {
 
@@ -56,7 +64,7 @@ public class Lab2 {
 
 	private static Comparable getMax(Comparable[] a) {
 		Comparable Max = a[0];
-		for(int i = 0; i<a.length-1;i++) {
+		for(int i = 0; i<a.length-1;i++) { //goes through the list, changing the max value if the compared element is larger
 			
 			if(Max.compareTo(a[i+1]) < 0) {
 				
@@ -68,7 +76,7 @@ public class Lab2 {
 
 	private static <T> void printArrayGen(T[] a) {
 		System.out.print("{");
-		for (int i = 0; i < a.length - 1; i++ ) {
+		for (int i = 0; i < a.length - 1; i++ ) { //prints elements of array
 			System.out.print(a[i]);
 			System.out.print(", ");
 		}
@@ -80,7 +88,7 @@ public class Lab2 {
 
 	private static void printArray(String[] a) {
 		System.out.print("{");
-		for (int i = 0; i < a.length - 1; i++ ) {
+		for (int i = 0; i < a.length - 1; i++ ) { //prints elements of array
 			System.out.print(a[i]);
 			System.out.print(", ");
 		}
@@ -92,7 +100,7 @@ public class Lab2 {
 
 	private static void printArray(Character[] a) {
 		System.out.print("{");
-		for (int i = 0; i < a.length - 1; i++ ) {
+		for (int i = 0; i < a.length - 1; i++ ) { //prints elements of array
 			System.out.print(a[i]);
 			System.out.print(", ");
 		}
@@ -104,7 +112,7 @@ public class Lab2 {
 
 	private static void printArray(Double[] a) {
 		System.out.print("{");
-		for (int i = 0; i < a.length - 1; i++ ) {
+		for (int i = 0; i < a.length - 1; i++ ) { //prints elements of array
 			System.out.print(a[i]);
 			System.out.print(", ");
 		}
@@ -115,7 +123,7 @@ public class Lab2 {
 
 	private static void printArray(Integer[] a) {
 		System.out.print("{");
-		for (int i = 0; i < a.length - 1; i++ ) {
+		for (int i = 0; i < a.length - 1; i++ ) { //prints elements of array
 			System.out.print(a[i]);
 			System.out.print(", ");
 		}
@@ -126,7 +134,7 @@ public class Lab2 {
 
 	private static void printArrayNonGen(Object[] a) {
 		System.out.print("{");
-		for (int i = 0; i < a.length - 1; i++ ) {
+		for (int i = 0; i < a.length - 1; i++ ) { //prints elements of array
 			System.out.print(a[i]);
 			System.out.print(", ");
 		}
